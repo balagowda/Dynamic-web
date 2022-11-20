@@ -1,0 +1,6 @@
+<%- include('partials/header') -%>
+    <% for(let i=0;i<Title.length;i++){ %>
+        <h1> <%= Title[i] %> </h1>
+        <p> <%= Details[i].substring(0,100)+" ..." %> <a href="/<%= Title[i] %>">Read more</a></p>
+    <% } %>
+<%- include('partials/footer')-%>

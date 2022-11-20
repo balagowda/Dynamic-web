@@ -1,0 +1,12 @@
+<%- include('partials/header'); -%>
+
+  <h1>Compose</h1>
+  <form action="/newPost" method="post" id="newPost">
+    <label>Title</label>
+    <input type="text" name="text" required="required">
+    <label >Description</label>
+    <textarea name="longText" cols="75" rows="7" placeholder="Please enter your description here" style="width: 95%;" required="required"></textarea>
+    <input type="submit" value="Publish">
+  </form>
+
+<%- include('partials/footer'); -%>
